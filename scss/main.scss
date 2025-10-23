@@ -435,6 +435,7 @@ body {
 
 @import "_levels.scss";
 @import "_delivery.scss";
+@import "_footer.scss";
 @import "_after-styless";
 
 body {  
@@ -452,7 +453,7 @@ body {
   }    
 }
 
-.section:not(.deliv) {
-  
+.section:not(.deliv1) {
+  display: none;
 } 
 
