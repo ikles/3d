@@ -1930,8 +1930,14 @@ $('.margin_bottom').bind('textchange', function() {
   $(wi_cl).css( "margin-bottom",  $('.margin_bottom').val()+'px');
 });
 
-$('.gap').bind('textchange', function () {
+/*$('.gap').bind('textchange', function () {
   $('#active').css('gap', $('.gap').val() + 'px');
+});*/
+
+$('.gap').bind('textchange', function () {
+  var wi_cl = $('#active').attr('class');
+  var wi_cl = '.'+wi_cl;
+  $(wi_cl).css('gap', $('.gap').val() + 'px');
 });
 
 $('.margin_top').bind('textchange', function() {        
@@ -3127,9 +3133,10 @@ $('.class-name').keydown(function(e) {
 
 
 
-$('.styless').keydown(function(e) {
+/*$('.styless').keydown(function(e) {
   if (e.keyCode == 13) {
     var textar1 = $(this).parent().find('.styless').val();  
+    
     $('#active').attr('style', textar1);
     main_function();
 
@@ -3177,8 +3184,69 @@ $('.styless').keydown(function(e) {
     
 
   }
-});
+});*/
 
+
+$('.styless').keydown(function(e) {
+  if (e.keyCode == 13) {
+    var textar1 = $(this).parent().find('.styless').val();  
+    
+    
+
+
+      var wi_cl = $('#active').attr('class');
+      var wi_cl = '.'+wi_cl;
+      $(wi_cl).attr('style', textar1);
+    
+
+
+    main_function();
+
+    var css_fSize = $(wi_cl).css('font-size');
+    var css_line_height_2 = $(wi_cl).css('line-height');
+
+    if ( css_fSize !=  css_line_height_2) {
+
+      if (css_fSize != '10.7px' && css_line_height_2 != '10.7px') {
+        var css_line_height_tot = Number.parseInt(css_line_height_2) / Number.parseInt(css_fSize);
+        css_line_height_tot = css_line_height_tot.toFixed(1);
+
+        $(wi_cl).css('line-height', css_line_height_tot);
+      }
+
+    }
+    else {
+      $(wi_cl).css('line-height', '');
+    }
+
+    if ( $(wi_cl).css('line-height') == 'normal' ) {
+      $(wi_cl).css('line-height', '');
+    }
+
+    if ( $(wi_cl).css('letter-spacing') == '0' ) {
+      $(wi_cl).css('letter-spacing', '');
+    }
+
+    if ( $(wi_cl).css('text-align') == 'left' ) {
+      $(wi_cl).css('text-align', '');
+    }
+
+    if ( $(wi_cl).css('font-style') == 'normal' ) {
+      $(wi_cl).css('font-style', '');
+    }
+
+    if ( $(wi_cl).css('font-weight') == 'normal' ) {
+      $(wi_cl).css('font-weight', '');
+    }
+
+    if ( $(wi_cl).css('font-weight') == '400' ) {
+      $(wi_cl).css('font-weight', '');
+    }
+    
+    
+
+  }
+});
 
 $('.styless_2').keydown(function(e) {
   if (e.keyCode == 13) {
