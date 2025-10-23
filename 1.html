@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+
+      <div class="section">
+        <div class="contain">
+          <div class="h2">Этапы работы</div>
+          <div class="subtitle">4 простых шага к готовому изделию</div>
+          <div class="levels__row">
+
+            @@include('var/_levels-item.html',{
+              "img":"img/levels-1.svg",
+              "title":"Расчет стоимости",
+              "txt1":"Отправляете файл или чертеж",
+              "text":"Получаете расчет за 1 час"
+            })
+
+            @@include('var/_levels-item.html',{
+              "img":"img/levels-2.svg",
+              "title":"Подписание договора",
+              "txt1":"Фиксируем сроки и стоимость",
+              "text":"Предоплата не менее 50%"
+            })
+
+            @@include('var/_levels-item.html',{
+              "img":"img/levels-3.svg",
+              "title":"Производство",
+              "txt1":"Печать и постобработка",
+              "text":"По запросу предоставляем фотоотчеты по этапам"
+            })
+
+            @@include('var/_levels-item.html',{
+              "img":"img/levels-4.svg",
+              "title":"Доставка",
+              "txt1":"Отправка по России",
+              "text":"Полный расчет"
+            })
+
+          </div>
+          <div class="levels-actions">
+            <div class="levels-actions__l">
+              <p>Отправьте нам ваш проект, и мы подготовим подробный расчет с учетом всех требований</p>
+            </div>
+            <a href="" class="levels__btn">Отправить заявку</a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+</html>
+
