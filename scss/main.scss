@@ -411,6 +411,14 @@ body {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;  
+  @media (max-width : 991px) {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+  @media (max-width : 575px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .h2 {
@@ -421,6 +429,13 @@ body {
   text-transform: uppercase;
   color: var(--project-colors-blue);
   margin-bottom: 16px;
+  @media (max-width : 991px) {
+    font-size: 28px;
+  }
+  @media (max-width : 575px) {  
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
 }
 
 .subtitle {
@@ -429,14 +444,42 @@ body {
   line-height: 1.6;
   color: var(--text-oppozite);
   margin-top: -8px;
+  @media (max-width : 991px) {
+    margin-top: 0px;
+    font-size: 20px;  
+  }  
+  @media (max-width : 575px) {
+    font-size: 16px;
+
+  }
 }
+
+.h3 {
+  font-family: var(--third-family);
+  font-size: 24px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: rgb(10, 10, 10);
+  margin-bottom: 24px;
+  @media (max-width : 575px) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+
+
 
 //2000
 
+@import "_header.scss";
 @import "_levels.scss";
 @import "_delivery.scss";
-@import "_footer.scss";
 @import "_after-styless";
+@import "_serv";
+
+
+@import "_footer.scss";
 
 body {  
   &.active {
@@ -453,7 +496,9 @@ body {
   }    
 }
 
-.section:not(.deliv1) {
-  display: none;
+header,
+footer,
+.section:not(.serv) {
+  
 } 
 

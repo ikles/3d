@@ -3109,15 +3109,44 @@ $('.submit_value').keydown(function(e) {
 
 
 
-$('.class-name').keydown(function(e) {
+/*$('.class-name').keydown(function(e) {
   if (e.keyCode == 13) {
     var class_name = $('.class-name').val();
     $('#active').attr('class', class_name);
-    $('.class-name').val('');
-    //$('#active').after('<!--'+class_name+'-->');
+    $('.class-name').val('');    
     main_function();
   }
+});*/
+
+
+
+$('.class-name').keydown(function(e) {
+  if (e.keyCode == 13) {
+
+    //определяем класс до изменения класса
+    const startClass = $('#active').attr('class');
+
+
+
+    const class_name = $('.class-name').val();
+    $('#active').attr('class', class_name);      
+    $('.class-name').val('');    
+
+    //если отмечен чекбокс перименовывания класса
+    if ($('.radio_rename_classes').is(':checked')) {
+      $('.wrapper .' + startClass).attr('class', class_name);
+    }
+
+    //обычный ход, если чекбокс переименовывания не стоит
+    /*else {
+      
+    }*/
+
+    main_function();
+
+  }
 });
+
 
 
 /*$('.styless').keydown(function(e) {
@@ -3194,9 +3223,9 @@ $('.styless').keydown(function(e) {
     
 
 
-      var wi_cl = $('#active').attr('class');
-      var wi_cl = '.'+wi_cl;
-      $(wi_cl).attr('style', textar1);
+    var wi_cl = $('#active').attr('class');
+    var wi_cl = '.'+wi_cl;
+    $(wi_cl).attr('style', textar1);
     
 
 

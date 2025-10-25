@@ -148,17 +148,7 @@
   }
 }
 
-@media (max-width : 991px) {
-  .h2 {
-    font-size: 28px;
-  }
-
-  .subtitle {
-    margin-top: 0px;
-    font-size: 20px;
-  }
-
-
+@media (max-width : 991px) {  
   .levels-actions {
     flex-direction: column;
     gap: 20px;
@@ -171,11 +161,7 @@
   .levels__btn {
     width: 100%;
   }
-
-  .section {
-    padding-top: 62px;
-    padding-bottom: 62px;
-  }
+  
   .levels-item {
     &:nth-child(2) {
       &:after {
@@ -193,20 +179,7 @@
 
 
 
-@media (max-width : 575px) {
-  .section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .h2 {
-    margin-bottom: 8px;
-    font-size: 18px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
+@media (max-width : 575px) {  
 
   .levels__row {
     gap: 16px;
