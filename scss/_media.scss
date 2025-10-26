@@ -1,10 +1,13 @@
 .lcpadding {
-  padding-left: calc((100% - 1241px)/2);    
+  padding-left: calc((100% - 1200px)/2);    
+  @media only screen and (max-width : 1280px) {
+    padding-left: calc((100% - 1170px)/2);
+  }
   @media only screen and (max-width : 1199px) {
     padding-left: calc((100% - 970px)/2);
   }
   @media only screen and (max-width : 991px) {
-    padding-left: calc((100% - 750px)/2);
+    padding-left: calc((100% - 720px)/2);
   }
   @media only screen and (max-width : 767px) {
     padding-left: calc((100% - 600px)/2);
@@ -13,19 +16,22 @@
     padding-left: calc((100% - 530px)/2);
   }
   @media only screen and (max-width : 570px) {
-    padding-left: 15px;
+    padding-left: 19px;
   }
 }
 
 
 
 .rcpadding {  
-  padding-right: calc((100% - 1241px)/2);
+  padding-right: calc((100% - 1200px)/2);
+  @media only screen and (max-width : 1280px) {    
+    padding-right: calc((100% - 1170px)/2);
+  }
   @media only screen and (max-width : 1199px) {    
     padding-right: calc((100% - 970px)/2);
   }
   @media only screen and (max-width : 991px) {    
-    padding-right: calc((100% - 750px)/2);
+    padding-right: calc((100% - 720px)/2);
   }
   @media only screen and (max-width : 767px) {    
     padding-right: calc((100% - 600px)/2);
@@ -34,7 +40,7 @@
     padding-right: calc((100% - 530px)/2);
   }
   @media only screen and (max-width : 570px) {    
-    padding-right: 15px;
+    padding-right: 19px;
   }
 }
 
