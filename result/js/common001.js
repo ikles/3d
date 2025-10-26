@@ -480,12 +480,19 @@ $('.form-my2').append('<span style="cursor: pointer; position: absolute; left: 1
     }
   });
 
-  $('body').keydown(function (e) {
+/*  $('body').keydown(function (e) {
     if (e.altKey && e.keyCode == 66) {
       $('#active').append(colb);
       main_function();
     }
-  });
+  });*/
+
+  $('body').keydown(function(e) {
+  if (e.altKey && e.keyCode == 66) {
+   $('.group-sizes').slideToggle();
+   main_function();
+ }
+});
 
   $('body').keydown(function (e) {
     if (e.altKey && e.keyCode == 76) {
@@ -2149,16 +2156,43 @@ $('.tag_name').keydown(function(e) {
     }
   });
 
-  $('.class-name').keydown(function (e) {
-    //enter key
+  /*$('.class-name').keydown(function (e) {
+    
     if (e.keyCode == 13) {
       var class_name = $('.class-name').val();
       $('#active').attr('class', class_name);
       $('.class-name').val('');
-      //$('#active').after('<!--'+class_name+'-->');
+      
       main_function();
     }
-  });
+  });*/
+
+  $('.class-name').keydown(function(e) {
+  if (e.keyCode == 13) {
+
+    //определяем класс до изменения класса
+    const startClass = $('#active').attr('class');
+
+
+
+    const class_name = $('.class-name').val();
+    $('#active').attr('class', class_name);      
+    $('.class-name').val('');    
+
+    //если отмечен чекбокс перименовывания класса
+    if ($('.radio_rename_classes').is(':checked')) {
+      $('.wrapper .' + startClass).attr('class', class_name);
+    }
+
+    //обычный ход, если чекбокс переименовывания не стоит
+    /*else {
+      
+    }*/
+
+    main_function();
+
+  }
+});
 
   /*
 $('.styless').keydown(function(e) {

@@ -112,6 +112,10 @@
     font-size: 18px;
     margin-top: 4px;
   }
+
+  .advant__item-txt {
+    word-break: break-all;    
+  }
 }//991
 
 @media (max-width : 575px) {
