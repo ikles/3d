@@ -924,7 +924,7 @@ body {
 
 .grad {
   position: relative;  
-  background: linear-gradient(90deg, #0891B2, #033E4C);  
+  background: linear-gradient(90deg, #0891B2, #033E4C);    
   padding: 1px;
   align-items: center;
   justify-content: center;
@@ -1256,7 +1256,7 @@ body {
 header,
 footer,
 .section:not(.our) {
-  display: none;
+  
 } 
 
 

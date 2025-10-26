@@ -1357,11 +1357,6 @@ body {
   text-transform: uppercase;
   color: #0a0a0a; }
 
-header,
-footer,
-.section:not(.our) {
-  display: none; }
-
 .footer {
   background: var(--project-colors-7);
   padding: 48px 0; }
