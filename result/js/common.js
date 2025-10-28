@@ -33,7 +33,31 @@ jQuery(document).ready(function( $ ) {
     dots: true,    
     arrows: false,   
     vertical: true,
-    
+
+  });
+
+
+  
+
+  $('.completed__sl').slick({            
+    infinite: false,    
+    slidesToShow: 3,
+    speed: 200,
+    slidesToScroll: 1,
+    autoplay: false,
+    touchThreshold: 10,
+    autoplaySpeed: 4000,
+    cssEase: 'ease-out',
+    arrows: true,    
+    dots: true,    
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 
 }); //ready
