@@ -1442,6 +1442,259 @@ body {
   background: linear-gradient(45deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));
 }
 
+
+
+
+
+
+
+
+.conts {  
+  overflow: hidden;
+  min-height: 610px;
+  position: relative;
+}
+
+.conts__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.conts__content {
+  padding-top: 56px;
+  padding-bottom: 55px;  
+  width: 100%;  
+}
+
+.conts__w {
+  width: 609px;
+  background-color: rgb(255, 255, 255);
+  padding: 24px 24px 24px 16px;
+  display: flex;
+  justify-content: space-between;  
+  position: relative;
+  z-index: 10;
+}
+
+.conts__labels {
+  display: flex;  
+  flex-direction: column;
+  width: 42px;  
+  flex: none;
+  > div {
+    writing-mode: vertical-rl; /* Вертикальное написание текста */
+    text-orientation: mixed; /* Сохраняет ориентацию букв */
+    transform: rotate(180deg); /* Переворачивает текст */
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    width: 42px;
+    font-family: var(--third-family);
+    font-size: 16px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.conts__inner {
+  width: calc(100% - 42px);
+  margin-left: 1px;
+}
+
+.conts__inner-1 {
+ border-left: 1px solid rgba(15, 7, 6, 0.1);  
+}
+
+.conts__labels-details {
+  color: rgb(255, 255, 255);
+  background: rgb(124, 124, 124);
+}
+
+.conts__labels-contacts {  
+  color: rgb(255, 255, 255);
+  background: rgb(8, 145, 178);
+  position: relative;  
+  &:after {    
+    transform: rotate(180deg) translate(100%, 50%);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 10px;
+    height: 38px;
+    background: url("../img/Polygon 4.svg") no-repeat right center;
+    
+  }  
+}
+
+
+
+.loc {
+  display: flex;
+}
+
+.loc__txt {
+  font-family: var(--font7);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212529;
+  padding-left: 18px;
+  margin-bottom: 24px;
+  max-width: 310px;
+}
+
+.loc__close {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.conts__col {
+  padding: 16px 12px 16px 32px;
+  background: url("../img/Line52.svg") no-repeat top center, url("../img/Line52.svg") no-repeat bottom center;
+}
+
+.conts__row {
+  display: flex;  
+  + .conts__row {
+    margin-top: 8px;
+  }
+}
+
+.conts__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conts__inf-w {
+}
+
+.conts__inf-name {
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: rgb(75, 85, 99);
+  margin-bottom: 4px;
+  font-family: var(--third-family);
+}
+
+.conts__inf-txt {
+  font-family: var(--second-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(0, 28, 36);
+}
+
+.conts__mail {
+  font-family: var(--second-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(0, 28, 36);
+  display: inline-flex;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.conts__btn-w {
+  display: flex;
+  gap: 24px;
+  padding-left: 14px;
+  margin-top: 26px;  
+  justify-content: space-between;
+}
+
+.conts__btn {
+  font-family: var(--third-family);
+  background: rgb(8, 145, 178);
+  display: inline-flex;
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 19px;
+  padding-right: 19px;
+  width: 50%;
+}
+
+.conts__phone-w {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.conts__phone {
+  font-size: 20px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: rgb(33, 37, 41);
+  display: inline-flex;
+  font-family: var(--third-family);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.conts__phone-txt {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgb(75, 85, 99);
+  text-align: center;
+  font-family: var(--second-family);
+}
+
+.conts__soc-w {
+  font-family: var(--second-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(33, 37, 41);
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  margin-top: 24px;
+}
+
+.conts__soc {
+  line-height: 1.6;
+  margin-left: 59px;
+}
+
+.conts__geo {
+  background-image: url("../img/geo-1.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 85px;
+  width: 82px;
+  display: block;
+  position: absolute;
+  right: -5px;
+  left: 1000px;
+  bottom: 250px;
+}
 //2000
 
 

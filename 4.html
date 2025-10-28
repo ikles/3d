@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+<!--meta name="viewport" content="width=1200px"-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4. Контакты</title>  
+@@include('var/_styless.html')
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+
+      <div class="conts">
+        <div class="conts__map" id="map">        
+        </div>
+        <div class="conts__content">
+          <div class="contain">
+            <div class="conts__w">
+              <div class="conts__labels">
+                <div class="conts__labels-contacts">контакты</div>
+                <div class="conts__labels-details">реквизиты</div>
+              </div>
+              <div class="conts__inner">
+                <div class="conts__inner-1">
+                  <div class="loc">
+                    <div class="loc__txt">Мы находимся на западе Санкт-Петербурга в районе ул. Свеаборгская</div><span class="loc__close"></span></div>
+                    <div class="conts__col">
+                      <div class="conts__row">
+                        <div class="conts__icon"><img src="img/conts-ic-1.svg"></div>
+                        <div class="conts__inf-w">
+                          <div class="conts__inf-name">Почтовый адрес:</div>
+                          <div class="conts__inf-txt">Санкт-Петербург, ул. Свеаборгская, д.11</div>
+                        </div>
+                      </div>
+                      <div class="conts__row">
+                        <div class="conts__icon"><img src="img/conts-ic-2.svg"></div>
+                        <div class="conts__inf-w">
+                          <div class="conts__inf-name">Мы работаем:</div>
+                          <div class="conts__inf-txt">ежедневно 10.00-20.00</div>
+                        </div>
+                      </div>
+                      <div class="conts__row">
+                        <div class="conts__icon"><img src="img/conts-ic-3.svg"></div>
+                        <div class="conts__inf-w">
+                          <div class="conts__inf-name">Электронная почта для предложений/сотрудничества:</div><a href="" class="conts__mail">info@3d-pechat-spb.ru</a></div>
+                        </div>
+                      </div>
+                      <div class="conts__btn-w"><a href="" class="conts__btn">Оставьте заявку</a>
+                        <div class="conts__phone-w"><a href="" class="conts__phone">+7 (812) 767-86-82</a>
+                          <div class="conts__phone-txt">Звоните или оставляйте заявку</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="conts__soc-w">Мы в соц сетях:<a href="" class="conts__soc"><img src="img/soc.svg"></a></div>
+                  </div><!--conts__inner-->
+                </div>
+                <!-- <a href="" class="conts__geo"></a> -->
+              </div>
+            </div>
+          </div>
+
+
+        </main>
+        @@include('var/_footer.html')    
+      </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

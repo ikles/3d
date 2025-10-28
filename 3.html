@@ -6,14 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2. Контрактная 3D-печать МЕТАЛЛОМ</title>  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-<!-- <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css"> -->
-<link rel="stylesheet" href="css/slick.css">
-<link rel="stylesheet" href="css/select2.min.css">
-<link rel="stylesheet" href="css/main.css">
+@@include('var/_styless.html')
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -24,29 +17,7 @@
 <body>
 
   <div class="wrapper">
-    <header class="header">  
-  <div class="contain">
-    <div class="header__row">
-      <a href="index.html" class="logo">
-        <img src="img/logo.svg">
-        <div class="logo__text">
-          <span class="logo__name">КОНСТРУКЦИИ</span>
-          <span class="logo__slogan">от мала до велика!</span>
-        </div>
-      </a>
-      <div class="header__mnu">
-        <ul>
-          <li class="has-children"><a href="">Услуги</a></li>
-          <li><a href="">Возможности</a></li>
-          <li><a href="">Рассчитать online</a></li>
-          <li><a href="">Условия</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </div>        
-      <a href="tel:+7 (812) 767-86-82" class="header__phone">+7 (812) 767-86-82</a>
-    </div>
-  </div>
-</header>    
+    @@include('var/_header.html')    
     <main class="main">
       <section class="section our">
         <div class="contain">
@@ -135,70 +106,11 @@
 
 
     </main>
-    <footer class="footer">    
-  <div class="contain">
-    <div class="footer__top">
-      <div class="footer__col-1">
-        <a href="index.html" class="footer__logo">
-          <img src="img/flogo.svg">
-          <div class="footer__logo-text">
-            <div>КОНСТРУКЦИИ</div>
-            <span>от мала до велика!</span>
-          </div>
-        </a>
-        <div class="slogan">3D-печать для юридических лиц в Санкт-Петербурге</div>
-      </div>
-      <div class="footer__col-2">
-        <div class="footer__title">Услуги</div>
-        <div class="footer__mnu">
-          <ul>
-            <li><a href="">3D- печать FDM</a></li>
-            <li><a href="">3D- печать SLA/DLP</a></li>
-            <li><a href="">Материалы</a></li>
-            <li><a href="">Вопросы и ответы</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__col-2">
-        <div class="footer__title">Информация</div>
-        <div class="footer__mnu">
-          <ul>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Отзывы</a></li>
-            <li><a href="">Оплата</a></li>
-            <li><a href="">Доставка</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__col-3">
-        <div class="footer__title">Контакты</div>
-        <div class="footer__cont _adress">Санкт-Петербург, ул. Свеаборгская, д.11</div>
-        <div class="footer__cont _tel"><a href="" class="footer__cont-a">+7 (812) 767-86-82</a></div>
-        <div class="footer__cont _tg"><a href="" class="footer__cont-a">Телеграм</a></div>
-        <div class="footer__cont _mail"><a href="" class="footer__cont-a">info@3d-pechat-spb.ru</a></div>
-      </div>
-    </div>
-    <div class="footer__bot">
-      <div class="copy">© 2025 3D-кострукции СПб. Все права защищены.</div>
-      <ul class="footer__links">
-        <li><a href="">Политика конфиденциальности</a></li>
-        <li><a href="">Пользовательское соглашение</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>    
+    @@include('var/_footer.html')    
   </div>
 <!--wrapper-->
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
-  <script async src="js/placemark.js"></script>  
-  <!-- <script src="js/nouislider.js"></script>
-  <script src="js/wNumb.min.js"></script>
-  <script src="js/select2.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script> -->
-  <script src="js/common.js"></script>
+@@include('var/_scripts.html')
 </body>
 </html>
 
