@@ -170,6 +170,10 @@
     margin-top: 34px;
     gap: 8px;
   }
+  .banner {
+    padding: 64px 0;
+  }
+
 }//1199
 
 @media (max-width : 991px) {
@@ -406,6 +410,14 @@
 
   .lcpadding.slider__contain {
     max-width: 720px;
+  }
+  .slider__h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;    
+  }
+  .banner .slider__actions {
+    margin-top: 40px;
   }
 }//991
 
@@ -770,6 +782,17 @@
     font-weight: 400;
     font-size: 12px;
     height: 51px;
+  }
+  .banner {
+    padding: 40px 0;
+  }
+
+  .slider__h4 {
+    font-family: var(--font-family);
+    font-size: 13px;
+  }
+  .banner .slider__actions {
+    margin-top: 36px;
   }
 }//575
 
