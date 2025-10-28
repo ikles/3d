@@ -1913,6 +1913,7 @@ body {
   line-height: 1.6;
   text-transform: uppercase;
   color: rgb(12, 12, 13);
+  font-family: var(--third-family);
 }
 
 .proj__labels {
@@ -1930,9 +1931,8 @@ body {
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  justify-content: center;
+  padding: 0 16px;
+  justify-content: center;  
 }
 
 .proj-label__icon {
@@ -1956,12 +1956,14 @@ body {
   margin-left: 8px;
   display: flex;
   align-items: center;
+  font-family: var(--second-family);
 }
 
 .proj__txt {
   font-size: 16px;
   line-height: 1.6;
   color: rgb(12, 12, 13);
+  margin-bottom: 0;
   &:empty {    
     display: none;
   }
@@ -2040,14 +2042,20 @@ body {
     }
   }
 }//sl
+
+.examples {
+  background: rgba(8, 145, 178, 0.03);
+}
 //2000
 
 
+.content-block,
+.banner,
 .slider,
 header,
 footer,
-.section:not(.completed) {
-
+.section:not(.examples) {
+  
 } 
 
 @media (min-width : 1200px) {
