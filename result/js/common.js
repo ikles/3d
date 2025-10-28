@@ -21,5 +21,20 @@ jQuery(document).ready(function( $ ) {
 
   
 
+  $('.slider__slider').slick({            
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 200,
+    slidesToScroll: 1,
+    autoplay: false,
+    touchThreshold: 10,
+    autoplaySpeed: 4000,
+    cssEase: 'ease-out',
+    dots: true,    
+    arrows: false,   
+    vertical: true,
+    
+  });
+
 }); //ready
 
