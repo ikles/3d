@@ -132,11 +132,71 @@ jQuery(document).ready(function( $ ) {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 2,
+          arrows: false,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: false,
+          infinite: true    
         }
       }
     ]
   });
+
+  $('.rev__sl').slick({            
+    infinite: false,    
+    slidesToShow: 2,
+    speed: 200,
+    slidesToScroll: 1,
+    autoplay: false,
+    touchThreshold: 10,
+    autoplaySpeed: 4000,
+    cssEase: 'ease-out',
+    arrows: true,    
+    dots: true,   
+    variableWidth: false, 
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: false,
+          infinite: true    
+        }
+      }
+    ]
+  });
+
+
+  function popup(openLink, windowEl, closeEl) {  
+    $(openLink).click(function(e) {
+      e.preventDefault();
+      $(windowEl).fadeIn();
+      $('body').addClass('ohi');
+    });
+    $(closeEl).click(function(e) {
+      e.preventDefault();
+      $(windowEl).fadeOut();
+      $('body').removeClass('ohi');
+    });
+    $('.modal-overlay').click(function () {
+      $(this).fadeOut();
+      $('body').removeClass('ohi');
+    });
+    $('.modal-form__block').click(function (e) {
+      e.stopPropagation();  
+    });
+    
+  }
+  
+  popup('.rev__btn', '.modal-overlay_1', '.modal-close_1');
 
 }); //ready
 
