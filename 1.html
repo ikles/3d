@@ -19,6 +19,82 @@
   <div class="wrapper">
     @@include('var/_header.html')    
     <main class="main">
+
+
+      <div class="addrev">
+        <span class="addrev__close"></span>
+        <form class="addrev__form">
+          <div class="addrev__h5">Оставить отзыв</div>
+          
+
+
+          <div class="add-img__item">
+            <div class="addrev__previews">
+              <div class="addrev__preview">
+                <div class="addrev__img-w">
+                </div>
+              </div>
+              
+              <div class="addrev__preview">
+                <div class="addrev__img-w">
+                  <img src="img/addrev2.jpg" />
+                </div>
+                <div class="addrev-preview__close"></div>
+              </div>
+              <div class="addrev__preview">
+                <div class="addrev__img-w">
+                  <img src="img/addrev3.jpg" />
+                </div>
+                <div class="addrev-preview__close"></div>
+              </div>
+              <div class="addrev__preview">
+                <div class="addrev__img-w">
+                  <img src="img/addrev4.jpg" />
+                </div>
+                <div class="addrev-preview__close"></div>
+              </div>
+              <div class="addrev__preview">
+                <div class="addrev__img-w">
+                  <img src="img/addrev5.jpg" />
+                </div>
+                <div class="addrev-preview__close"></div>
+              </div>
+            </div>
+            <label class="addform_file-label addrev__add-photo">
+              <input size="40" accept=".html,.html,.pdf,.docx,.doc,.xls,.xlsx,.txt,.jpg,.jpeg,.png"
+              class="multi-file-input" type="file" aria-invalid="false">
+              <span class="calc__load-format">+ Фото</span>
+            </label>
+          </div>
+
+          <div class="addrev__input-w">
+            <div class="addrev__input-label">Имя*</div>
+            <input type="text" placeholder="Ваш телефон">
+          </div>
+
+          <div class="addrev__input-w">
+            <div class="addrev__input-label">E-mail*</div>
+            <input type="text" placeholder="Rinarina@gmail.com">
+          </div>
+          <textarea placeholder="Ваш комментарий тут..."></textarea>
+          <div class="addrev-rating">
+            <div class="addrev-rating__lbl">Ваша оценка</div>
+            <div class="rating__item">
+              <div class="rating__stars" data-result-value="0">
+                <div class="rating__star" data-star-value="5"></div>
+                <div class="rating__star" data-star-value="4"></div>
+                <div class="rating__star" data-star-value="3"></div>
+                <div class="rating__star" data-star-value="2"></div>
+                <div class="rating__star" data-star-value="1"></div>
+              </div>
+            </div>
+          </div>          
+
+          <input type="submit" value="Оставить отзыв" class="btn">
+        </form>
+      </div>
+
+
       <div class="slider">
         <div class="lcpadding slider__contain">
           <div class="slider__row">
@@ -417,7 +493,7 @@
           </div>
         </div>
       </section>
-
+      @@include('var/_form.html')
       <section class="section deliv">
         <div class="contain">
           <div class="h2">Доставка по Санкт-Петербургу и России</div>

@@ -2253,9 +2253,9 @@ $('.styless').keydown(function(e) {
       if ($('#active').css('font-weight') == '400') {
         $('#active').css('font-weight', '');
       }
-      if ($('#active').css('font-family')) {
+      /*if ($('#active').css('font-family')) {
         $('#active').css('font-family', '');
-      }
+      }*/
       if ($('#active').css('font-feature-settings')) {
         $('#active').css('font-feature-settings', '');
       }
