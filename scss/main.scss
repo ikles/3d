@@ -643,6 +643,37 @@ body {
   }
 }
 
+.bread__w {
+  padding: 4px 0;
+  background: var(--bg-main);
+}
+
+.bread {
+  ul {
+    display: flex;    
+    align-items: center;
+    gap: 16px;
+    li {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%;
+      text-align: center;
+      color: var(--project-colors-orange);
+      a {
+        color: #FFF;
+      }
+      &:not(:last-child) {
+        &:after {
+          content: "/";
+          color: #FFF;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}
+
 .header__phone {
   font-size: 18px;
   text-transform: uppercase;

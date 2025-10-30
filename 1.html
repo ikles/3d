@@ -451,139 +451,140 @@
                 <div class="deliv__inner">
                   <div class="deliv__img"><img src="img/deliv-1.svg"></div>
                   <div class="deliv__content">
-                    <p>Самовывоз от студии</p>
-                    <span>Бесплатно в любое время</span></div>
+                    <p>Бесплатная доставка по согласованию</p>
+                    <span>Для крупных заказов</span>
                   </div>
-                  <div class="deliv__inner">
-                    <div class="deliv__img"><img src="img/deliv-2.svg"></div>
-                    <div class="deliv__content">
-                      <p>Курьерская доставка</p>
-                      <span>Бесплатно при заказе от 3000₽ на следующий день после выполнения заказа</span>
-                      <span>Платно в день заказа по тарифам и силами Яндекс.Go</span>
-                    </div>
+                </div>
+                <div class="deliv__inner">
+                  <div class="deliv__img"><img src="img/deliv-2.svg"></div>
+                  <div class="deliv__content">
+                    <p>Транспортные компании</p>
+                    <span>СДЭК, Деловые линии и другие ТК</span>
+                    <span>Отправка в любой регион России</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="section rev">          
-          <div class="contain">            
-            <h2 class="h2">Отзывы наших клиентов</h2>              
-            <p class="subtitle">Реальные кейсы и проекты наших клиентов</p>
-            <div class="rev__sl-wrap">
-              <div class="rev__sl slider__sl">
-                @@include('var/_rev__item.html',{
-                  "cls":"",
-                  "revday":"",
-                  "revya":"",
-                  "text":"Отличная работа! Напечатали корпус для прибора за 2 дня. Качество на высоте, все размеры соблюдены.",
-                  "img":"img/rev-ava.png",                
-                  "name":"Ирина Иванова",
-                  "dia": ""
-                })
-                @@include('var/_rev__item.html',{
-                  "cls":"",
-                  "revday":"<div class='rev__day'>3 дня назад</div>",
-                  "revya":"<div class='rev__ya'></div>",
-                  "text":"Очень довольна сотрудничеством. Помогли с выбором материала, сделали тестовый образец бесплатно. Рекомендую!",
-                  "img":"img/rev-ava-2.png",                
-                  "name":"ИЛЬЯ МАКСИМЕНКО",
-                  "dia": "<div class='rev__item-img-w'><img src='img/dial.jpg'></div>"
-                })
-                @@include('var/_rev__item.html',{
-                  "cls":"",
-                  "revday":"",
-                  "revya":"",
-                  "text":"Отличная работа! Напечатали корпус для прибора за 2 дня. Качество на высоте, все размеры соблюдены.",
-                  "img":"img/rev-ava.png",                
-                  "name":"Ирина Иванова",
-                  "dia": ""
-                })
-                @@include('var/_rev__item.html',{
-                  "cls":"",
-                  "revday":"",
-                  "revya":"",
-                  "text":"Отличная работа! Напечатали корпус для прибора за 2 дня. Качество на высоте, все размеры соблюдены.",
-                  "img":"img/rev-ava.png",                
-                  "name":"Ирина Иванова",
-                  "dia": ""
-                })
-
-
-                @@include('var/_rev__item.html',{
-                  "cls":"",
-                  "revday":"<div class='rev__day'>3 дня назад</div>",
-                  "revya":"<div class='rev__ya'></div>",
-                  "text":"Очень довольна сотрудничеством. Помогли с выбором материала, сделали тестовый образец бесплатно. Рекомендую!",
-                  "img":"img/rev-ava-2.png",                
-                  "name":"ИЛЬЯ МАКСИМЕНКО",
-                  "dia": "<div class='rev__item-img-w'><img src='img/dial.jpg'></div>"
-                })
-              </div>
-            </div>
-            <div class="rev__btn-w">
-              <button class="btn rev__btn">ОСТАВИТЬ ОТЗЫВ</button>
-            </div>
-          </div>
-        </section>
-        <section class="section completed">
-          <div class="contain">            
-            <div class="h2">Выполненные проекты</div>
-            <div class="completed__sl slider__sl">
-              @@include('var/_proj__item.html',{
-                "img":"img/proj-1.jpg",
-                "title":"Шестерня привода заслонки печки Audi A6",
-                "text":"Lorem ipsum dolor sit amet consectetur. Sagittis amet molestie turpis fermentum mauris praesent nisi enim in. Iaculis scelerisque sed donec odio urna ac convallis pulvinar.",                
-                "labels":"<div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-1.svg'></div><div class='proj-label__name'>Материал: POM</div></div><div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-2.svg'></div><div class='proj-label__name'>Срок: 3 дня</div></div><div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-3.svg'></div><div class='proj-label__name'>Точность ±0.1мм</div></div>"
+        </div>
+      </section>
+      <section class="section rev">          
+        <div class="contain">            
+          <h2 class="h2">Отзывы наших клиентов</h2>              
+          <p class="subtitle">Реальные кейсы и проекты наших клиентов</p>
+          <div class="rev__sl-wrap">
+            <div class="rev__sl slider__sl">
+              @@include('var/_rev__item.html',{
+                "cls":"",
+                "revday":"",
+                "revya":"",
+                "text":"Отличная работа! Напечатали корпус для прибора за 2 дня. Качество на высоте, все размеры соблюдены.",
+                "img":"img/rev-ava.png",                
+                "name":"Ирина Иванова",
+                "dia": ""
+              })
+              @@include('var/_rev__item.html',{
+                "cls":"",
+                "revday":"<div class='rev__day'>3 дня назад</div>",
+                "revya":"<div class='rev__ya'></div>",
+                "text":"Очень довольна сотрудничеством. Помогли с выбором материала, сделали тестовый образец бесплатно. Рекомендую!",
+                "img":"img/rev-ava-2.png",                
+                "name":"ИЛЬЯ МАКСИМЕНКО",
+                "dia": "<div class='rev__item-img-w'><img src='img/dial.jpg'></div>"
+              })
+              @@include('var/_rev__item.html',{
+                "cls":"",
+                "revday":"",
+                "revya":"",
+                "text":"Отличная работа! Напечатали корпус для прибора за 2 дня. Качество на высоте, все размеры соблюдены.",
+                "img":"img/rev-ava.png",                
+                "name":"Ирина Иванова",
+                "dia": ""
+              })
+              @@include('var/_rev__item.html',{
+                "cls":"",
+                "revday":"",
+                "revya":"",
+                "text":"Отличная работа! Напечатали корпус для прибора за 2 дня. Качество на высоте, все размеры соблюдены.",
+                "img":"img/rev-ava.png",                
+                "name":"Ирина Иванова",
+                "dia": ""
               })
 
-              @@include('var/_proj__item.html',{
-                "img":"img/proj-2.jpg",
-                "title":"Корпус электронного устройства",
-                "text":"",
-                "labels":""                
-              })
 
-              @@include('var/_proj__item.html',{
-                "img":"img/proj-3.jpg",
-                "title":"Кронштейны для промышленного оборудования",
-                "text":"",
-                "labels":""                
-              })
-
-              @@include('var/_proj__item.html',{
-                "img":"img/proj-2.jpg",
-                "title":"Корпус электронного устройства",
-                "text":"",
-                "labels":""                
-              })
-              @@include('var/_proj__item.html',{
-                "img":"img/proj-1.jpg",
-                "title":"Шестерня привода заслонки печки Audi A6",
-                "text":"Lorem ipsum dolor sit amet consectetur. Sagittis amet molestie turpis fermentum mauris praesent nisi enim in. Iaculis scelerisque sed donec odio urna ac convallis pulvinar.",                
-                "labels":"<div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-1.svg'></div><div class='proj-label__name'>Материал: POM</div></div><div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-2.svg'></div><div class='proj-label__name'>Срок: 3 дня</div></div><div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-3.svg'></div><div class='proj-label__name'>Точность ±0.1мм</div></div>"
-              })
-              @@include('var/_proj__item.html',{
-                "img":"img/proj-3.jpg",
-                "title":"Кронштейны для промышленного оборудования",
-                "text":"",
-                "labels":""                
-              })
-
-              @@include('var/_proj__item.html',{
-                "img":"img/proj-2.jpg",
-                "title":"Корпус электронного устройства",
-                "text":"",
-                "labels":""                
+              @@include('var/_rev__item.html',{
+                "cls":"",
+                "revday":"<div class='rev__day'>3 дня назад</div>",
+                "revya":"<div class='rev__ya'></div>",
+                "text":"Очень довольна сотрудничеством. Помогли с выбором материала, сделали тестовый образец бесплатно. Рекомендую!",
+                "img":"img/rev-ava-2.png",                
+                "name":"ИЛЬЯ МАКСИМЕНКО",
+                "dia": "<div class='rev__item-img-w'><img src='img/dial.jpg'></div>"
               })
             </div>
           </div>
-        </section>
+          <div class="rev__btn-w">
+            <button class="btn rev__btn">ОСТАВИТЬ ОТЗЫВ</button>
+          </div>
+        </div>
+      </section>
+      <section class="section completed">
+        <div class="contain">            
+          <div class="h2">Выполненные проекты</div>
+          <div class="completed__sl slider__sl">
+            @@include('var/_proj__item.html',{
+              "img":"img/proj-1.jpg",
+              "title":"Шестерня привода заслонки печки Audi A6",
+              "text":"Lorem ipsum dolor sit amet consectetur. Sagittis amet molestie turpis fermentum mauris praesent nisi enim in. Iaculis scelerisque sed donec odio urna ac convallis pulvinar.",                
+              "labels":"<div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-1.svg'></div><div class='proj-label__name'>Материал: POM</div></div><div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-2.svg'></div><div class='proj-label__name'>Срок: 3 дня</div></div><div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-3.svg'></div><div class='proj-label__name'>Точность ±0.1мм</div></div>"
+            })
 
-      </main>
-      @@include('var/_footer.html')    
-    </div>
+            @@include('var/_proj__item.html',{
+              "img":"img/proj-2.jpg",
+              "title":"Корпус электронного устройства",
+              "text":"",
+              "labels":""                
+            })
+
+            @@include('var/_proj__item.html',{
+              "img":"img/proj-3.jpg",
+              "title":"Кронштейны для промышленного оборудования",
+              "text":"",
+              "labels":""                
+            })
+
+            @@include('var/_proj__item.html',{
+              "img":"img/proj-2.jpg",
+              "title":"Корпус электронного устройства",
+              "text":"",
+              "labels":""                
+            })
+            @@include('var/_proj__item.html',{
+              "img":"img/proj-1.jpg",
+              "title":"Шестерня привода заслонки печки Audi A6",
+              "text":"Lorem ipsum dolor sit amet consectetur. Sagittis amet molestie turpis fermentum mauris praesent nisi enim in. Iaculis scelerisque sed donec odio urna ac convallis pulvinar.",                
+              "labels":"<div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-1.svg'></div><div class='proj-label__name'>Материал: POM</div></div><div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-2.svg'></div><div class='proj-label__name'>Срок: 3 дня</div></div><div class='proj-label'><div class='proj-label__icon'><img src='img/prod-ic-3.svg'></div><div class='proj-label__name'>Точность ±0.1мм</div></div>"
+            })
+            @@include('var/_proj__item.html',{
+              "img":"img/proj-3.jpg",
+              "title":"Кронштейны для промышленного оборудования",
+              "text":"",
+              "labels":""                
+            })
+
+            @@include('var/_proj__item.html',{
+              "img":"img/proj-2.jpg",
+              "title":"Корпус электронного устройства",
+              "text":"",
+              "labels":""                
+            })
+          </div>
+        </div>
+      </section>
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
 <!--wrapper-->
 
 @@include('var/_scripts.html')

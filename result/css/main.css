@@ -871,6 +871,28 @@ body {
         .header__col > ul > li.has-children:hover ul {
           display: block; } }
 
+.bread__w {
+  padding: 4px 0;
+  background: var(--bg-main); }
+
+.bread ul {
+  display: flex;
+  align-items: center;
+  gap: 16px; }
+  .bread ul li {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--project-colors-orange); }
+    .bread ul li a {
+      color: #FFF; }
+    .bread ul li:not(:last-child):after {
+      content: "/";
+      color: #FFF;
+      margin-left: 16px; }
+
 .header__phone {
   font-size: 18px;
   text-transform: uppercase;
@@ -2855,10 +2877,10 @@ select + .select2-container {
   .slider__title {
     font-size: 42px; }
   .slider__content {
-    width: 614px;
+    width: 644px;
     padding-right: 15px; }
   .slider__right {
-    width: calc(100% - 614px); } }
+    width: calc(100% - 644px); } }
 
 @media (max-width: 1199px) {
   .logo img {
