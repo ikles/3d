@@ -541,7 +541,7 @@ body {
 
 
 
-.header__mnu {
+.header__col {
   > ul {
     align-items: center;
     display: flex;
@@ -550,14 +550,29 @@ body {
       align-items: center;
       margin-left: 8px;
       margin-right: 8px;
-      a {
+      > a {
         display: inline-flex;
         color: rgb(255, 255, 255);
         font-size: 16px;
         text-transform: uppercase;
+        padding: 20px 0;
+        &:hover {
+          text-decoration: none;
+        }
+        @media (any-hover: hover) {
+          &:hover {
+            color: var(--project-colors-orange);
+          }
+        }
+      }
+      &.active {
+        > a {
+          color: var(--project-colors-orange);
+        }
       }
       &.has-children {
-        &:after {          
+        position: relative;
+        i {          
           flex: none;
           content: "";
           display: block;
@@ -571,6 +586,58 @@ body {
           background-repeat: no-repeat;
           background-position: center;
         }
+        ul {
+          min-width: 187px;
+          position: absolute;
+          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+          background: var(--bg-main);
+          bottom: 0;
+          transform: translate(0%, 100%);
+          padding: 24px;
+          z-index: 6;
+          display: none;
+          li {
+            &:not(:last-child) {
+              margin-bottom: 8px;
+            }
+            &.active {
+              > a {
+                color: var(--project-colors-orange);
+              }
+            }
+            a {
+              white-space: nowrap;
+              font-family: var(--second-family);
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 160%;
+              color: var(--text-oppozite);
+              &:hover {
+                text-decoration: none;
+              }
+              @media (any-hover: hover) {
+                &:hover {
+                  color: var(--project-colors-orange);
+                }
+              }
+            }
+          }
+        }
+        &.open {
+          i {
+            transform: rotate(180deg);
+          }
+          ul {
+            display: block;              
+          }
+        }
+        @media (any-hover: hover) {
+          &:hover {
+            ul {
+              display: block;              
+            }
+          }
+        }
       }
     }
   }
@@ -583,7 +650,11 @@ body {
   background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  padding-left: 23px;
+  padding-left: 23px;  
+  line-height: 16px;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 
@@ -2786,7 +2857,9 @@ select + .select2-container {
 }
 
 
-
+.burger {
+  display: none;
+}
 
 //2000
 
