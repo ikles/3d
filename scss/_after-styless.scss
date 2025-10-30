@@ -646,8 +646,18 @@
 .calc__pres-inf {
   margin-left: 16px;
 }
-.header__row { 
 
+
+.content__row-2,
+.content-page__row {  
+  flex-direction: column;
+  gap: 24px;
+  > div {
+    width: 100%;
+  }
+}
+.content-page__img {
+  height: 300px;
 }
 }//991
 
@@ -1148,6 +1158,15 @@
   .banner--small {
     padding: 24px 0;
   }
+  .content-page__img {
+    height: 200px;
+  }
+  .content-block {
+    padding-top: 40px;
+    p {
+      font-size: 13px;
+    }
+  } 
 }//575
 
 @media (max-width : 375px) {
